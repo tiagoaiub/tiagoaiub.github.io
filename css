@@ -1,1 +1,20 @@
 style.css
+body {
+    background-color: #000E54;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #0A95F5;
+}
+
+p {
+    color: #FFFFFF;
+}

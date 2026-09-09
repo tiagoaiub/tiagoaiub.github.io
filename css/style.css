@@ -225,3 +225,34 @@ body {
 .project-link:hover {
     color: #0A95F5;
 }
+
+.about {
+    background-color: #F5F8FC;
+    color: #000E54;
+    padding: 120px 8%;
+}
+
+.about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3F4A5A;
+    margin: 0 0 24px 0;
+}

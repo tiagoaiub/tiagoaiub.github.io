@@ -10,22 +10,24 @@ body {
 }
 
 .site-header {
-    position: absolute;
+   position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 28px 10%;
+    padding: 26px 8%;
     z-index: 10;
 }
 
 .header-container {
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .brand img {
-    width: 180px;
+    width: 220px;
     height: auto;
 }
 
@@ -50,11 +52,13 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 80px 10%;
+    padding: 120px 8% 80px;
 }
 
 .hero-content {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .hero-label {
@@ -67,9 +71,9 @@ body {
 }
 
 .hero h1 {
-    font-size: 64px;
-    line-height: 1.05;
-    margin: 0 0 24px 0;
+    font-size: 72px;
+    line-height: 1.02;
+    margin: 0 0 28px 0;
 }
 
 .hero h1 span {
@@ -77,9 +81,9 @@ body {
 }
 
 .hero-description {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.7;
-    max-width: 650px;
+    max-width: 720px;
     margin-bottom: 32px;
 }
 

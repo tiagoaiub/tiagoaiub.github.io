@@ -357,42 +357,57 @@ body {
 
 @media (max-width: 768px) {
 
-    .site-header {
+  .site-header {
         padding: 20px 6%;
     }
 
     .header-container {
         flex-direction: column;
-        gap: 18px;
         align-items: flex-start;
+        gap: 18px;
     }
 
     .brand img {
-        width: 180px;
+        width: 210px;
     }
 
     .nav-menu {
-        gap: 20px;
+        display: flex;
+        gap: 28px;
         flex-wrap: wrap;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
     }
 
     .hero {
         min-height: auto;
-        padding: 180px 6% 80px;
+        padding: 210px 6% 80px;
     }
 
     .hero h1 {
-        font-size: 46px;
+        font-size: 52px;
         line-height: 1.05;
     }
 
     .hero-description {
         font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .hero-tools {
+        gap: 10px;
+    }
+
+    .hero-tools span {
+        font-size: 14px;
+        padding: 8px 14px;
     }
 
     .hero-buttons {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 14px;
     }
 
     .btn-primary,
@@ -401,67 +416,10 @@ body {
         text-align: center;
     }
 
-    .projects {
-        padding: 80px 6%;
-    }
-
-    .projects h2 {
-        font-size: 36px;
-    }
-
-    .project-card {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .project-content h3 {
-        font-size: 30px;
-    }
-
-    .project-question {
-        font-size: 19px;
-    }
-
-    .about {
-        padding: 80px 6%;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about h2 {
-        font-size: 36px;
-    }
-
-    .contact {
-        padding: 80px 6%;
-    }
-
-    .contact h2 {
-        font-size: 36px;
-    }
-
-    .contact-links {
-        flex-direction: column;
-    }
-
-    .contact-link {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
     .back-to-top {
         right: 18px;
-        bottom: 18px;
-        width: 44px;
-        height: 44px;
+        bottom: 90px;
+        width: 46px;
+        height: 46px;
     }
 }

@@ -333,3 +333,24 @@ body {
 .contact-link:hover {
     background-color: #0A95F5;
 }
+
+.footer {
+    background-color: #000A3D;
+    color: #AAB6D3;
+    padding: 28px 8%;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+}
+
+.footer p {
+    margin: 0;
+}

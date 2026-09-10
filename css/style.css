@@ -133,6 +133,12 @@ body {
     color: #FFFFFF;
 }
 
+.projects,
+.about,
+.contact {
+    min-height: 100vh;
+}
+
 .projects {
     background-color: #FFFFFF;
     color: #000E54;
@@ -404,8 +410,9 @@ body {
     .hero {
         flex: 1;
         min-height: auto;
-        display: block;
-        padding: 54px 24px 72px;
+        display: flex;
+        align-items: center;
+        padding: 54px 24px;
     }
 
     .hero-content {
@@ -550,7 +557,7 @@ body {
     }
 
     .hero {
-        padding-top: 46px;
+        padding-block: 46px;
     }
 
     .hero h1 {

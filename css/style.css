@@ -1,8 +1,9 @@
 * {
-    html {
-    scroll-behavior: smooth;
-}
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+}
+
+.hero-shell {
+    background-color: #000E54;
 }
 
 .site-header {
@@ -361,6 +366,12 @@ body {
 
 @media (max-width: 768px) {
 
+    .hero-shell {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
     .site-header {
         position: relative;
         padding: 24px 24px 10px;
@@ -391,6 +402,7 @@ body {
     }
 
     .hero {
+        flex: 1;
         min-height: auto;
         display: block;
         padding: 54px 24px 72px;

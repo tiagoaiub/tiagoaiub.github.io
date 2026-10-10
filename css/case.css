@@ -1,0 +1,70 @@
+/* Styles scoped to the case; the Home keeps its existing layout. */
+.case-page { background: #fff; color: #000E54; overflow-x: visible; }
+.case-page .hero-shell { color: #fff; min-height: auto; }
+.case-page .site-header { position: relative; }
+.case-container, .case-layout { width: min(84%, 1300px); margin-inline: auto; }
+.case-hero { padding: 42px 0 72px; }
+.case-back { display: inline-block; color: #fff; margin-bottom: 42px; }
+.case-hero h1 { font-size: clamp(44px, 7vw, 88px); line-height: 1.04; margin: 20px 0 28px; letter-spacing: -0.04em; }
+.case-hero h1 span { color: #0A95F5; }
+.case-lead { max-width: 800px; font-size: clamp(20px, 2.5vw, 28px); line-height: 1.5; }
+.case-status { display: inline-block; border: 1px solid #01F4FE; border-radius: 6px; padding: 10px 14px; color: #01F4FE; font-size: 13px; line-height: 1.6; }
+.case-summary { max-width: 710px; color: #DCE4F5; line-height: 1.8; }
+.case-start { display: inline-block; color: #01F4FE; font-weight: 600; padding-block: 16px; }
+.case-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px; align-items: start; padding-block: 64px 96px; }
+.case-index { position: sticky; top: 24px; font-size: 13px; }
+.case-index > p { font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.case-index ol { padding-left: 24px; }
+.case-index li { padding-left: 4px; }
+.case-index a { display: block; color: #000E54; padding: 10px 0; line-height: 1.5; text-decoration: none; }
+.case-index a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.case-article { min-width: 0; max-width: 850px; }
+.case-section { scroll-margin-top: 24px; padding-bottom: 48px; margin-bottom: 48px; border-bottom: 1px solid #D9E2F2; }
+.case-section:last-child { margin-bottom: 0; }
+.case-number { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; }
+.case-section h2 { font-size: clamp(26px, 3vw, 38px); line-height: 1.2; margin: 14px 0 24px; letter-spacing: -0.025em; }
+.case-section h3 { font-size: 19px; line-height: 1.5; }
+.case-section p, .case-section li, .case-section dd { line-height: 1.8; }
+.case-section p, .case-section li { overflow-wrap: anywhere; }
+.case-section > p:not(.case-number), .case-section li, .data-checklist dd { color: #3F4A5A; }
+.case-section li { margin-bottom: 12px; }
+.case-section ul, .question-list { padding-left: 24px; }
+.case-note { background: #F5F8FC; border-left: 3px solid #0A95F5; padding: 20px 24px; margin-block: 24px; line-height: 1.8; }
+.case-note p { margin: 8px 0 0; }
+.data-checklist { margin-block: 28px; }
+.data-checklist > div { padding: 18px 0; border-bottom: 1px solid #D9E2F2; }
+.data-checklist dt { font-weight: 700; }
+.data-checklist dd { margin: 8px 0 0; }
+.method-list { padding-left: 24px; }
+.method-list li { padding-left: 10px; margin-bottom: 24px; }
+.method-list h3 { color: #000E54; margin-bottom: 8px; }
+.method-list p { margin-top: 0; }
+.source-note { font-size: 13px; }
+.case-return { display: inline-block; margin-top: 16px; color: #000E54; font-weight: 700; }
+.case-page a:focus-visible { outline: 3px solid #0A95F5; outline-offset: 5px; }
+.case-page .hero-shell a:focus-visible, .case-page .back-to-top:focus-visible { outline-color: #01F4FE; }
+.case-page .back-to-top { background: #000E54; color: #01F4FE; }
+.skip-link { position: absolute; left: 16px; top: -100px; background: #fff; color: #000E54; padding: 14px; z-index: 20; }
+.skip-link:focus { top: 16px; }
+@media (max-width: 1000px) {
+    .case-layout { grid-template-columns: 1fr; gap: 32px; }
+    .case-index { position: static; border-bottom: 1px solid #D9E2F2; padding-bottom: 20px; }
+    .case-index ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+}
+@media (max-width: 768px) {
+    .case-container, .case-layout { width: auto; margin-inline: 24px; }
+    .case-hero { padding: 28px 0 48px; }
+    .case-back { margin-bottom: 28px; }
+    .case-layout { padding-block: 32px 48px; }
+    .case-section { padding-bottom: 32px; margin-bottom: 32px; }
+    .case-note { padding: 16px; }
+    .case-page .footer { padding-right: 80px; }
+}
+@media (max-width: 420px) {
+    .case-index ol { grid-template-columns: 1fr; }
+    .case-hero h1 { font-size: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .case-page *, .case-page *::before, .case-page *::after { transition: none; }
+}

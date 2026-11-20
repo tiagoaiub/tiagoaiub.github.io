@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,20 +33,43 @@
 </header>
     <section class="hero">
 
+    <svg class="hero-chart" viewBox="0 0 620 480" fill="none" aria-hidden="true" focusable="false">
+        <defs>
+            <pattern id="hero-chart-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M0 40V0H40" stroke="#0A95F5" stroke-opacity=".28"/>
+            </pattern>
+            <linearGradient id="hero-chart-bar" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                <stop stop-color="#0A95F5" stop-opacity=".65"/>
+                <stop offset="1" stop-color="#0A95F5" stop-opacity=".06"/>
+            </linearGradient>
+        </defs>
+        <path d="M40 48H600V432H40z" fill="url(#hero-chart-grid)"/>
+        <path d="M117 390v-52h32v52z M179 390v-90h32v90z M241 390v-72h32v72z
+                 M303 390V260h32v130z M365 390V282h32v108z M427 390V219h32v171z
+                 M489 390V240h32v150z M551 390V158h32v232z" fill="url(#hero-chart-bar)"/>
+        <path d="m81 324 68-54 62 19 62-70 62 24 62-61 62 25 62-47 62-75"
+              stroke="#01F4FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="#01F4FE">
+            <circle cx="81" cy="324" r="4"/>
+            <circle cx="149" cy="270" r="4"/>
+            <circle cx="211" cy="289" r="4"/>
+            <circle cx="273" cy="219" r="4"/>
+            <circle cx="335" cy="243" r="4"/>
+            <circle cx="397" cy="182" r="4"/>
+            <circle cx="459" cy="207" r="4"/>
+            <circle cx="521" cy="160" r="4"/>
+            <circle cx="583" cy="85" r="4"/>
+        </g>
+    </svg>
+
     <div class="hero-content">
 
-        <p class="hero-label">
-            Analista de Dados
-        </p>
-
         <h1>
-            Menos achismo.<br>
-            <span>Mais evidência.</span>
+            Inteligência que transforma dados em <span>decisões.</span>
         </h1>
 
         <p class="hero-description">
-            Investigo problemas de negócio usando dados, estatística e tecnologia
-            para transformar perguntas em decisões.
+            Clareza analítica. Tecnologia aplicada. Visão humana.
         </p>
 
         <div class="hero-tools">
@@ -73,6 +96,51 @@
 
   </section>
 </div>
+<section class="process" aria-labelledby="process-title">
+    <div class="process-container">
+        <header class="process-heading">
+            <p class="section-label">Meu processo analítico</p>
+            <h2 id="process-title">Das perguntas às decisões</h2>
+        </header>
+
+        <ol class="process-steps" role="list">
+            <li class="process-step">
+                <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                    <circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/>
+                </svg>
+                <div>
+                    <h3>Perguntas certas</h3>
+                    <p>Compreender o problema, o contexto e o que precisa ser investigado.</p>
+                </div>
+            </li>
+            <li class="process-step">
+                <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                    <path d="M4 4v16h16M8 16v-4m5 4V8m5 8V5"/>
+                </svg>
+                <div>
+                    <h3>Análises consistentes</h3>
+                    <p>Transformar dados em evidências com método, pensamento crítico e clareza.</p>
+                </div>
+            </li>
+            <li class="process-step">
+                <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="8"/><path d="m8.5 12 2.5 2.5 4.5-5"/>
+                </svg>
+                <div>
+                    <h3>Decisões melhores</h3>
+                    <p>Traduzir os achados em informações úteis para orientar escolhas.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
 <section id="projetos" class="projects">
 
     <div class="projects-container">
@@ -167,6 +235,12 @@
                 e aplicação prática no contexto de negócio.
             </p>
 
+            <ul class="about-pillars" role="list">
+                <li><strong>Analítica</strong><span>Pensamento crítico</span></li>
+                <li><strong>Inovadora</strong><span>Tecnologia com propósito</span></li>
+                <li><strong>Humana</strong><span>Comunicação clara</span></li>
+            </ul>
+
         </div>
 
     </div>
@@ -219,7 +293,7 @@
         </p>
 
         <p>
-            Menos achismo. Mais evidência.
+            Inteligência que transforma dados em decisões.
         </p>
 
     </div>

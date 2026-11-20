@@ -84,15 +84,6 @@ body {
     margin: 0 auto;
 }
 
-.hero-label {
-    color: #01F4FE;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
 .hero h1 {
     max-width: 15ch;
     font-size: clamp(3rem, 5.4vw, 4.75rem);
@@ -555,16 +546,7 @@ a:focus-visible {
     }
 
     .hero-chart {
-        inset: auto -8% 0 auto;
-        width: min(110%, 580px);
-        opacity: 0.19;
-        transform: none;
-    }
-
-    .hero-label {
-        font-size: 12px;
-        letter-spacing: 2.2px;
-        margin: 0 0 18px;
+        display: none;
     }
 
     .hero h1 {

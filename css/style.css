@@ -80,3 +80,33 @@ footer p { color: #c8d8ef; margin-top: .45rem; }
   .lead-grid { padding-block: 2.5rem; }
   .feature { padding: 1.3rem; }
 }
+
+.opening { position:relative; isolation:isolate; overflow:hidden; background:linear-gradient(110deg,#f7fbff 28%,#e8f5fc 100%); }
+.opening-copy { position:relative; padding-block:clamp(3rem,6vw,6rem); }
+.opening h1 { max-width:17ch; font-size:clamp(2.65rem,5.7vw,5.1rem); margin:.85rem 0 1.25rem; }
+.opening em { color:#086591; font-style:normal; }
+.opening .lead { max-width:51ch; font-size:clamp(1.05rem,1.5vw,1.22rem); }
+.opening .button { background:var(--navy); color:white; }
+.signals { position:absolute; z-index:-1; inset:0 0 0 43%; background-image:radial-gradient(#98bdd7 1px,transparent 1px); background-size:22px 22px; mask-image:linear-gradient(90deg,transparent,#000 45%); }
+.signals i { position:absolute; inset:5% -5% 10% 0; background:#3989b6; opacity:.39; clip-path:polygon(0 77%,17% 64%,30% 69%,45% 43%,60% 49%,76% 22%,85% 29%,100% 7%,100% 7.55%,85% 29.55%,76% 22.55%,60% 49.55%,45% 43.55%,30% 69.55%,17% 64.55%,0 77.55%); }
+.signals i:nth-child(2) { transform:translateY(13%) scaleY(.8); background:#207d86; }
+.signals i:nth-child(3) { transform:translateY(24%) scaleY(.68); opacity:.2; }
+.process { background:white; }
+.steps { gap:1rem; margin-top:1.5rem; }
+.steps > div { border:1px solid #cfdfea; border-radius:.7rem; padding:1.35rem; background:#f6faff; }
+.steps h3 { color:#124b74; }
+.catalog { padding-block:clamp(2.5rem,5vw,5rem); }
+.catalog h1 { font-size:clamp(2.8rem,5vw,5rem); }
+.catalog section { margin-top:2.5rem; }
+.catalog section h2 { font-size:clamp(1.5rem,3vw,2rem); margin-bottom:1.25rem; }
+.tiles { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(22rem,100%),1fr)); gap:1.5rem; }
+.tile { display:block; overflow:hidden; border-radius:.8rem; border:1px solid var(--line); text-decoration:none; color:var(--ink); }
+.tile:hover { text-decoration:none; border-color:var(--blue); }
+.tile:hover h3 { text-decoration:underline; }
+.cover { background:#081949; padding:1.2rem; color:white; }
+.cover img { display:block; width:100%; height:8rem; object-fit:contain; }
+.cover span { display:block; text-align:center; margin-top:.55rem; font-size:.9rem; }
+.tile-body { padding:1.4rem; }
+.tile-body p { margin:.7rem 0; }
+.tile-body small { color:#205678; font-weight:600; }
+@media(max-width:52rem){.signals { inset:0 0 0 25%; opacity:.28; }}
